@@ -1,30 +1,18 @@
-# Elliot Kirschner website — version 2
+# Elliot Kirschner — GitHub Pages site
 
-This revision puts journalism, writing, and documentary filmmaking at the center.
+This folder is ready to upload to the root of the `elliotkirschner6.github.io` GitHub repository.
 
-## Design
-The site now uses a colorful editorial system rather than a muted consulting aesthetic.
-Photo-placeholder panels are intentionally built into the layout and describe the kinds
-of images that would work in each location.
+Files:
+- `index.html`
+- `styles.css`
+- `script.js`
+- `images/`
 
-## Suggested photographs to collect
-- Informal current portrait, ideally San Francisco or a working environment
-- CBS newsroom / assignment / archival reporting image
-- Working photograph with Dan Rather
-- A personal San Francisco fog / landscape photograph
-- The Last Class still
-- Human Nature still
-- The Most Unknown still
-- 4–6 Science Communication Lab short-film stills for a mosaic
-- Observer still
-- The Work in Progress still or production photo
-- One textured personal/work image for the About section
+To publish an update on GitHub:
+1. Open the repository.
+2. Choose **Add file → Upload files**.
+3. Upload `index.html`, `styles.css`, `script.js`, and the entire `images` folder.
+4. Replace the existing files when prompted / commit the new upload.
+5. GitHub Pages will redeploy automatically.
 
-## Before publishing
-Replace `hello@example.com` with Elliot's preferred contact email.
-Film still placeholders can be replaced by normal `<img>` elements or converted
-to CSS background images.
-
-External links already included:
-- IMDb: https://www.imdb.com/name/nm2803921/
-- Through the Fog: https://elliotkirschner.substack.com/
+Note: the What Unites Us cover currently loads from a public remote image URL. All of the user-supplied photographs and film posters are bundled locally.
