@@ -1,0 +1,396 @@
+:root {
+  --cream: #f5efe3;
+  --ink: #151515;
+  --paper: #fffaf0;
+  --orange: #ef6a42;
+  --pink: #e887ad;
+  --blue: #69a8d8;
+  --green: #80aa72;
+  --yellow: #e9bf49;
+  --purple: #8e78b3;
+  --line: rgba(21,21,21,.18);
+  --muted: #666158;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: inherit; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 4vw;
+  border-bottom: 1px solid var(--line);
+  background: rgba(245,239,227,.92);
+  backdrop-filter: blur(12px);
+}
+
+.wordmark {
+  text-decoration: none;
+  font: 600 1.4rem "Newsreader", Georgia, serif;
+}
+
+nav { display: flex; gap: 24px; }
+nav a { text-decoration: none; font-size: .84rem; }
+nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+.hero {
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 82vh;
+  padding: 75px 4vw 90px;
+  display: grid;
+  grid-template-columns: 1.55fr .75fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-weight: 600;
+  font-size: .72rem;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 900px;
+  font: 500 clamp(4rem, 7.7vw, 8.2rem)/.92 "Newsreader", Georgia, serif;
+  letter-spacing: -.05em;
+}
+
+.hero-copy {
+  max-width: 780px;
+  font: 400 clamp(1.25rem, 2vw, 1.65rem)/1.45 "Newsreader", Georgia, serif;
+}
+
+.hero-copy strong { font-weight: 600; }
+
+.hero-links { display: flex; gap: 20px; align-items: center; margin-top: 34px; flex-wrap: wrap; }
+
+.pill {
+  display: inline-block;
+  border-radius: 100px;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-size: .88rem;
+  font-weight: 600;
+}
+.pill.dark { background: var(--ink); color: white; }
+.pill.light { border: 1px solid currentColor; }
+.text-link { font-size: .9rem; text-underline-offset: 4px; }
+
+.photo-placeholder {
+  border: 2px dashed rgba(21,21,21,.35);
+  padding: 28px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,.6), transparent 30%),
+    linear-gradient(135deg, #efb05d, #e98283 50%, #7e95c4);
+}
+
+.photo-placeholder strong {
+  font: 500 1.8rem "Newsreader", Georgia, serif;
+  margin-top: 7px;
+}
+
+.photo-placeholder p {
+  max-width: 420px;
+  margin-bottom: 0;
+  font-size: .82rem;
+}
+
+.photo-label {
+  margin-bottom: auto;
+  font-size: .66rem;
+  letter-spacing: .16em;
+  font-weight: 600;
+}
+
+.hero-photo {
+  min-height: 500px;
+  transform: rotate(1.2deg);
+}
+
+.interest-strip {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font: 500 clamp(1.5rem, 2.6vw, 2.8rem) "Newsreader", Georgia, serif;
+}
+
+.interest {
+  min-height: 160px;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  border-right: 1px solid rgba(21,21,21,.2);
+}
+.history { background: var(--orange); }
+.politics { background: var(--pink); }
+.culture { background: var(--yellow); }
+.science { background: var(--blue); }
+.arts { background: var(--green); }
+
+.intro-band {
+  background: var(--ink);
+  color: white;
+  padding: 90px 5vw;
+}
+
+.big-copy {
+  max-width: 1100px;
+  margin: 0 auto;
+  font: 400 clamp(2.3rem, 4.4vw, 4.6rem)/1.08 "Newsreader", Georgia, serif;
+  letter-spacing: -.025em;
+}
+.big-copy strong { color: #f1aa70; font-weight: 500; }
+
+.section { max-width: 1220px; margin: 0 auto; padding: 110px 4vw; }
+
+.split-heading {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 70px;
+  align-items: end;
+}
+
+.section-heading h2, .about-section h2 {
+  margin: 0;
+  font: 500 clamp(3rem, 5.5vw, 5.7rem)/.98 "Newsreader", Georgia, serif;
+  letter-spacing: -.04em;
+}
+
+.section-intro {
+  margin: 0 0 6px;
+  font: 400 1.32rem/1.5 "Newsreader", Georgia, serif;
+  color: #49453f;
+}
+
+.timeline { margin-top: 70px; }
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 50px;
+  border-top: 1px solid var(--line);
+  padding: 42px 0;
+}
+
+.timeline-date {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .75rem;
+  font-weight: 600;
+}
+
+.timeline-item h3 {
+  margin: 0 0 12px;
+  font: 500 2.7rem "Newsreader", Georgia, serif;
+}
+
+.timeline-item p {
+  max-width: 780px;
+  margin: 0;
+  font-size: 1.03rem;
+}
+
+.stat-row {
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+.stat-row span { color: var(--muted); font-size: .84rem; }
+.stat-row b { color: var(--ink); font: 500 1.8rem "Newsreader", Georgia, serif; display: block; }
+
+.wide-photo { min-height: 360px; margin: 14px 0 68px; }
+.photo-blue {
+  background:
+    radial-gradient(circle at 70% 15%, rgba(255,255,255,.55), transparent 28%),
+    linear-gradient(145deg, #72b1d7, #597ca8 48%, #7f6fa7);
+}
+
+.dan-band {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 80px;
+  padding: 90px 5vw;
+  background: #cd5b44;
+  color: #fff9f3;
+}
+
+.dan-copy h2 {
+  margin: 0 0 20px;
+  font: 500 clamp(4rem, 7vw, 7rem)/.9 "Newsreader", Georgia, serif;
+}
+
+.dan-copy > p:last-child {
+  max-width: 620px;
+  font: 400 1.3rem/1.5 "Newsreader", Georgia, serif;
+}
+
+.dan-projects { border-top: 1px solid rgba(255,255,255,.4); }
+.dan-projects div {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255,255,255,.4);
+}
+.dan-projects span { font-size: .72rem; text-transform: uppercase; letter-spacing: .1em; }
+.dan-projects strong { font-weight: 500; }
+
+.writing-grid {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 16px;
+}
+
+.writing-feature, .book-card, .writing-topics {
+  padding: 34px;
+  min-height: 360px;
+  border: 1px solid var(--line);
+}
+
+.writing-feature { background: var(--paper); }
+.writing-feature h3, .book-card h3 {
+  margin: 0 0 14px;
+  font: 500 clamp(2.8rem, 4.5vw, 4.7rem)/1 "Newsreader", Georgia, serif;
+}
+.writing-feature p { max-width: 650px; }
+.writing-feature a { display: inline-block; margin-top: 18px; text-underline-offset: 4px; }
+
+.fog-photo {
+  min-height: 360px;
+  background:
+    linear-gradient(0deg, rgba(242,240,232,.15), rgba(242,240,232,.15)),
+    linear-gradient(145deg, #7d8e92, #c3c8c2 55%, #8b9c91);
+}
+
+.book-card { background: var(--yellow); }
+.book-byline { font-style: italic; }
+.mini-label { text-transform: uppercase; letter-spacing: .12em; font-size: .7rem; font-weight: 600; }
+
+.writing-topics { background: var(--green); }
+.topic-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; }
+.topic-list span {
+  border: 1px solid rgba(21,21,21,.45);
+  border-radius: 100px;
+  padding: 9px 12px;
+  font-size: .85rem;
+}
+
+.film-section { background: #1a1a1a; color: white; padding-bottom: 80px; }
+.film-heading > p:last-child {
+  max-width: 760px;
+  font: 400 1.35rem/1.5 "Newsreader", Georgia, serif;
+  color: #d9d5ce;
+}
+.film-grid { max-width: 1320px; margin: 0 auto; padding: 0 4vw; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+
+.film-card { color: var(--ink); }
+.film-photo { min-height: 320px; border-color: rgba(21,21,21,.38); }
+.film-copy { padding: 28px; min-height: 260px; }
+.film-copy > span { font-size: .72rem; text-transform: uppercase; letter-spacing: .08em; }
+.film-copy h3 { margin: 20px 0 9px; font: 500 2.6rem "Newsreader", Georgia, serif; }
+.film-copy p { margin: 0; max-width: 540px; }
+
+.film-orange .film-copy { background: var(--orange); }
+.film-pink .film-copy { background: var(--pink); }
+.film-green .film-copy { background: var(--green); }
+.film-blue .film-copy { background: var(--blue); }
+.film-yellow .film-copy { background: var(--yellow); }
+.film-purple .film-copy { background: var(--purple); }
+
+.film-orange .film-photo { background: linear-gradient(145deg,#f39b6f,#d45d41); }
+.film-pink .film-photo { background: linear-gradient(145deg,#e3a4bd,#ad6686); }
+.film-green .film-photo { background: linear-gradient(145deg,#9bbb83,#5f8060); }
+.film-blue .film-photo { background: linear-gradient(145deg,#8bc1dd,#557aa5); }
+.film-yellow .film-photo { background: linear-gradient(145deg,#ecd067,#be8c3a); }
+.film-purple .film-photo { background: linear-gradient(145deg,#aa92c3,#6d608f); }
+
+.film-link-row { max-width: 1320px; margin: 40px auto 0; padding: 0 4vw; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+.about-copy { padding-top: 24px; font: 400 1.28rem/1.56 "Newsreader", Georgia, serif; }
+.about-photo {
+  min-height: 390px;
+  margin-top: 70px;
+  background: linear-gradient(140deg,#f2b45e,#7eb0c3 52%,#95a36d);
+}
+
+.strategy-small {
+  background: #9d83b6;
+  padding: 76px 5vw;
+}
+.strategy-small h2 {
+  margin: 0 0 18px;
+  font: 500 clamp(2.8rem, 5vw, 5rem)/1 "Newsreader", Georgia, serif;
+}
+.strategy-small > p:last-child {
+  max-width: 850px;
+  font: 400 1.25rem/1.5 "Newsreader", Georgia, serif;
+}
+
+.contact-section {
+  padding: 100px 5vw;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+}
+.contact-section h2 {
+  margin: 0;
+  font: 500 clamp(3rem, 6vw, 6rem)/.98 "Newsreader", Georgia, serif;
+}
+.contact-section > div:last-child { padding-top: 24px; }
+.contact-section small { display: block; margin-top: 18px; color: var(--muted); }
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 28px 4vw;
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+@media (max-width: 850px) {
+  .site-header { padding: 16px 20px; }
+  nav { gap: 12px; overflow-x: auto; }
+  nav a { font-size: .76rem; white-space: nowrap; }
+  .hero { grid-template-columns: 1fr; padding: 65px 22px 75px; }
+  .hero h1 { font-size: clamp(3.3rem, 15vw, 5.3rem); }
+  .hero-photo { min-height: 380px; transform: none; }
+  .interest-strip { grid-template-columns: 1fr; }
+  .interest { min-height: 90px; }
+  .section { padding: 80px 22px; }
+  .split-heading, .dan-band, .writing-grid, .film-grid, .about-grid, .contact-section { grid-template-columns: 1fr; }
+  .timeline-item { grid-template-columns: 1fr; gap: 12px; }
+  .stat-row { gap: 20px; }
+  .dan-band { padding: 75px 22px; }
+  .film-grid { padding: 0 22px; }
+  .film-link-row { padding: 0 22px; }
+  .strategy-small { padding: 70px 22px; }
+  .contact-section { padding: 80px 22px; }
+}
