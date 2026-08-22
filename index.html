@@ -5,16 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Elliot Kirschner — filmmaker, writer, journalist.">
   <title>Elliot Kirschner</title>
-
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-  <meta property="og:title" content="Elliot Kirschner">
-  <meta property="og:description" content="Filmmaker · Writer · Journalist">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="images/social-preview.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
@@ -22,8 +12,8 @@
 </head>
 <body>
 <header class="site-header wrap">
-  <a class="wordmark" href="#top">Elliot Kirschner</a>
-  <nav>
+  <a class="brand" href="#top">Elliot Kirschner</a>
+  <nav aria-label="Primary">
     <a href="#work">Work</a>
     <a href="#writing">Writing</a>
     <a href="#bio">Bio</a>
@@ -35,149 +25,136 @@
   <section class="hero-shell">
     <div class="hero wrap">
       <div class="hero-copy">
-        <p class="eyebrow">FILMMAKER · WRITER · JOURNALIST</p>
+        <div class="kicker">FILMMAKER · WRITER · JOURNALIST</div>
         <h1>Elliot Kirschner</h1>
-        <p class="intro">Work spanning filmmaking, writing, journalism, and the development and production of ambitious media projects.</p>
+        <p class="dek">Work spanning filmmaking, writing, journalism, and the development and production of ambitious media projects.</p>
       </div>
-      <div class="hero-image-wrap">
-        <img class="hero-photo" src="images/hero.jpg" alt="Elliot Kirschner outdoors among ferns">
-      </div>
+      <figure class="hero-image">
+        <img src="images/hero.jpg" alt="Elliot Kirschner outdoors among ferns">
+      </figure>
     </div>
   </section>
 
   <section id="work" class="wrap section">
-    <h2 class="major-heading">Selected Work</h2>
-    <h3 class="minor-heading">Feature films</h3>
-
-    <div class="film-grid">
-      <article>
-        <a class="poster-link" href="https://theworkinprogressfilm.com" target="_blank" rel="noopener">
-          <img src="images/the-work-in-progress.png" alt="The Work in Progress poster">
-          <span class="film-hover"><span>Americans across generations and backgrounds sit down, ask one another questions, and listen.</span></span>
-        </a>
-        <p class="role">Executive Producer</p>
-        <h4>The Work in Progress</h4>
-        <a class="small-link" href="https://theworkinprogressfilm.com" target="_blank" rel="noopener">Official site ↗</a>
-      </article>
-
-      <article>
-        <a class="poster-link" href="https://www.thelastclassfilm.com/" target="_blank" rel="noopener">
-          <img src="images/the-last-class.jpg" alt="The Last Class poster">
-          <span class="film-hover"><span>Robert Reich teaches his final class at the University of California, Berkeley.</span></span>
-        </a>
-        <p class="role">Director</p>
-        <h4>The Last Class</h4>
-        <a class="small-link" href="https://www.thelastclassfilm.com/" target="_blank" rel="noopener">Official site ↗</a>
-      </article>
-
-      <article>
-        <a class="poster-link" href="https://sciencecommunicationlab.org/science-documentaries/observer/" target="_blank" rel="noopener">
-          <img src="images/observer.png" alt="Observer poster">
-          <span class="film-hover"><span>An exploration of observation, attention, and the ways we learn to see.</span></span>
-        </a>
-        <p class="role">Executive Producer</p>
-        <h4>Observer</h4>
-        <a class="small-link" href="https://sciencecommunicationlab.org/science-documentaries/observer/" target="_blank" rel="noopener">Learn more ↗</a>
-      </article>
-
-      <article>
-        <a class="poster-link" href="https://sciencecommunicationlab.org/science-documentaries/crispr/" target="_blank" rel="noopener">
-          <img src="images/human-nature.jpg" alt="Human Nature poster">
-          <span class="film-hover"><span>The story of CRISPR and the power to rewrite the code of life.</span></span>
-        </a>
-        <p class="role">Producer & Executive Producer</p>
-        <h4>Human Nature</h4>
-        <a class="small-link" href="https://sciencecommunicationlab.org/science-documentaries/crispr/" target="_blank" rel="noopener">Learn more ↗</a>
-      </article>
-
-      <article>
-        <a class="poster-link" href="https://www.imdb.com/title/tt8126390/" target="_blank" rel="noopener">
-          <img src="images/the-most-unknown.jpg" alt="The Most Unknown poster">
-          <span class="film-hover"><span>Nine scientists travel across disciplines in search of questions at the edge of knowledge.</span></span>
-        </a>
-        <p class="role">Supervising Producer</p>
-        <h4>The Most Unknown</h4>
-        <a class="small-link" href="https://www.imdb.com/title/tt8126390/" target="_blank" rel="noopener">IMDb ↗</a>
-      </article>
+    <div class="section-kicker">Selected Work</div>
+    <div class="film-section">
+      <h2>Feature films</h2>
+      <div class="films">
+        <article class="film">
+          <a class="poster" href="https://theworkinprogressfilm.com" target="_blank" rel="noopener"><img src="images/the-work-in-progress.png" alt="The Work in Progress poster"></a>
+          <div class="role">Executive Producer</div><h3>The Work in Progress</h3>
+          <a class="quiet-link" href="https://theworkinprogressfilm.com" target="_blank" rel="noopener">Official site</a>
+        </article>
+        <article class="film">
+          <div class="poster"><img src="images/the-last-class.jpg" alt="The Last Class poster"></div>
+          <div class="role">Director</div><h3>The Last Class</h3>
+        </article>
+        <article class="film">
+          <div class="poster"><img src="images/observer.png" alt="Observer poster"></div>
+          <div class="role">Executive Producer</div><h3>Observer</h3>
+        </article>
+        <article class="film">
+          <div class="poster"><img src="images/human-nature.jpg" alt="Human Nature poster"></div>
+          <div class="role">Producer &amp; Executive Producer</div><h3>Human Nature</h3>
+        </article>
+        <article class="film">
+          <div class="poster"><img src="images/the-most-unknown.jpg" alt="The Most Unknown poster"></div>
+          <div class="role">Supervising Producer</div><h3>The Most Unknown</h3>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section id="writing" class="wrap section writing-section">
-    <h2 class="major-heading">Writing</h2>
-
+  <section id="writing" class="wrap section">
+    <h2 class="small-section-title">Writing</h2>
     <div class="writing-grid">
       <article class="writing-feature">
-        <a class="writing-image" href="https://elliotkirschner.substack.com/" target="_blank" rel="noopener">
-          <img src="images/through-the-fog.jpg" alt="Through the Fog">
-        </a>
+        <div class="writing-image"><img src="images/through-the-fog.jpg" alt="Through the Fog"></div>
         <div class="writing-copy">
-          <p class="role">Independent writing</p>
+          <div class="role">Independent writing</div>
           <h3>Through the Fog</h3>
-          <a class="small-link" href="https://elliotkirschner.substack.com/" target="_blank" rel="noopener">Read Through the Fog ↗</a>
+          <p>An idiosyncratic exploration of current events, history, art, science, and community.</p>
+          <a class="quiet-link" href="https://elliotkirschner.substack.com/" target="_blank" rel="noopener">Read Through the Fog</a>
+          <div class="selected-links">
+            <a href="https://elliotkirschner.substack.com/" target="_blank" rel="noopener"><em>It’s No Joke</em></a>
+            <a href="https://elliotkirschner.substack.com/" target="_blank" rel="noopener"><em>A Special Place</em></a>
+            <a href="https://elliotkirschner.substack.com/" target="_blank" rel="noopener"><em>Inspiring Images</em></a>
+            <a href="https://elliotkirschner.substack.com/" target="_blank" rel="noopener"><em>Get the Hell Out of the Picture! The Biggest Loser</em></a>
+          </div>
         </div>
-        <p class="writing-description">An idiosyncratic exploration of current events, history, art, science, and community.</p>
       </article>
 
       <article class="writing-feature">
-        <a class="writing-image book" href="https://www.hachettebookgroup.com/titles/dan-rather/what-unites-us/9781616209940/" target="_blank" rel="noopener">
+        <div class="writing-image book">
           <img src="https://www.hachettebookgroup.com/wp-content/uploads/2026/02/9781616209940.jpg" alt="What Unites Us book cover">
-        </a>
-        <div class="writing-copy">
-          <p class="role">New York Times bestseller</p>
-          <h3>What Unites Us</h3>
-          <a class="small-link" href="https://www.hachettebookgroup.com/titles/dan-rather/what-unites-us/9781616209940/" target="_blank" rel="noopener">Learn more ↗</a>
         </div>
-        <p class="writing-description">Reflections on patriotism, citizenship, history, and American democracy, written with Dan Rather.</p>
+        <div class="writing-copy">
+          <div class="role">New York Times bestseller</div>
+          <h3>What Unites Us</h3>
+          <p>Reflections on patriotism, citizenship, history, and American democracy, written with Dan Rather.</p>
+          <a class="quiet-link" href="https://www.hachettebookgroup.com/titles/dan-rather/what-unites-us/9781616209940/" target="_blank" rel="noopener">Learn more</a>
+        </div>
       </article>
     </div>
-
-    <p class="quiet-note">Selected essays, the graphic novel, and other writing.</p>
+    <p class="writing-more">Also: selected essays, <a href="https://us.macmillan.com/books/9781250824233/whatunitesusthegraphicnovel/" target="_blank" rel="noopener"><em>What Unites Us: The Graphic Novel</em></a>, and other writing.</p>
   </section>
 
-  <section class="wrap section breadth">
-    <article>
-      <p class="role">Leadership & filmmaking</p>
-      <h3><a href="https://sciencecommunicationlab.org/" target="_blank" rel="noopener">Science Communication Lab ↗</a></h3>
-      <p>Led a decade of work developing and producing feature documentaries and short films about science, scientists, and the role of science in society.</p>
-    </article>
+  <section class="wrap section breadth-section">
+    <div class="breadth-grid">
+      <article class="breadth-item">
+        <div class="breadth-type">Leadership &amp; filmmaking</div>
+        <h3><a href="https://sciencecommunicationlab.org/" target="_blank" rel="noopener">Science Communication Lab</a></h3>
+        <p>Led a decade of work developing and producing feature documentaries and short films about science, scientists, and the role of science in society.</p>
+        <div class="selected-links">
+          <a href="https://sciencecommunicationlab.org/science-documentaries/" target="_blank" rel="noopener"><em>Good Chemistry</em></a>
+          <a href="https://sciencecommunicationlab.org/science-documentaries/" target="_blank" rel="noopener"><em>The Most Beautiful Experiment</em></a>
+          <a href="https://sciencecommunicationlab.org/science-documentaries/" target="_blank" rel="noopener"><em>How to Kill a Superbug</em></a>
+        </div>
+      </article>
 
-    <article>
-      <p class="role">Long-form journalism</p>
-      <h3>Dan Rather Reports</h3>
-      <p>Senior producer of the weekly newsmagazine, shaping investigations and reporting on politics, international affairs, science, culture, and public life.</p>
-    </article>
+      <article class="breadth-item">
+        <div class="breadth-type">Long-form journalism</div>
+        <h3>Dan Rather Reports</h3>
+        <p>Senior producer of the weekly newsmagazine, shaping investigations and reporting on politics, international affairs, science, culture, and public life.</p>
+        <div class="selected-links">
+          <a href="https://www.youtube.com/watch?v=4xypiZ-hqdY" target="_blank" rel="noopener"><em>A National Disgrace</em></a>
+        </div>
+      </article>
 
-    <article>
-      <p class="role">Broadcast journalism</p>
-      <h3>CBS News</h3>
-      <p>Produced for <em>60 Minutes</em>, <em>CBS Sunday Morning</em>, and the <em>CBS Evening News</em>, covering stories in the United States and around the world.</p>
-    </article>
+      <article class="breadth-item">
+        <div class="breadth-type">Broadcast journalism</div>
+        <h3>CBS News</h3>
+        <p>Produced for <em>60 Minutes</em>, <em>CBS Sunday Morning</em>, and the <em>CBS Evening News</em>, covering stories in the United States and around the world.</p>
+      </article>
 
-    <article>
-      <p class="role">Messaging & media</p>
-      <h3>Selected projects</h3>
-      <p>Develops messaging, editorial direction, writing, and multimedia strategies for organizations and public figures. Work with Dan Rather has included founding and writing <em>Steady</em>, along with digital and social media strategy.</p>
-    </article>
-  </section>
-
-  <section id="bio" class="wrap section bio">
-    <h2 class="major-heading">Bio</h2>
-    <div class="bio-grid">
-      <div class="bio-copy">
-        <p>Elliot Kirschner is an Emmy Award-winning journalist, filmmaker, producer, and New York Times bestselling author. He directed <a href="https://www.thelastclassfilm.com/" target="_blank" rel="noopener"><em>The Last Class</em></a>, the documentary feature about former U.S. Secretary of Labor Robert Reich and his final class at the University of California, Berkeley. Kirschner spent much of his career in broadcast journalism, including as a producer at CBS News, where his work appeared on <em>60 Minutes</em>, <em>CBS Sunday Morning</em>, and the <em>CBS Evening News</em>, and later as a senior producer of <em>Dan Rather Reports</em>.</p>
-        <p>He has since produced and executive produced a range of documentary films focused on science, society, and democracy, including <a href="https://sciencecommunicationlab.org/science-documentaries/crispr/" target="_blank" rel="noopener"><em>Human Nature</em></a>, <a href="https://www.imdb.com/title/tt8126390/" target="_blank" rel="noopener"><em>The Most Unknown</em></a>, and <a href="https://sciencecommunicationlab.org/science-documentaries/observer/" target="_blank" rel="noopener"><em>Observer</em></a>. He is the co-author, with Dan Rather, of the New York Times bestseller <a href="https://www.hachettebookgroup.com/titles/dan-rather/what-unites-us/9781616209940/" target="_blank" rel="noopener"><em>What Unites Us: Reflections on Patriotism</em></a>. A native of San Francisco, he returned to the city after more than two decades away and now lives and works there.</p>
-      </div>
-      <img class="sf-photo" src="images/san-francisco.jpeg" alt="San Francisco skyline and fog at sunset">
+      <article class="breadth-item">
+        <div class="breadth-type">Messaging &amp; media</div>
+        <h3>Media Strategist</h3>
+        <p>Develops messaging, editorial direction, writing, and multimedia strategies for organizations and public figures. Work with Dan Rather has included founding and writing <em>Steady</em>, along with digital and social media strategy.</p>
+      </article>
     </div>
   </section>
 
-  <section id="links" class="wrap section links">
-    <h2 class="major-heading">Links</h2>
-    <div class="profile-marks" aria-label="External profiles">
-      <a class="profile-mark linkedin" href="https://www.linkedin.com/in/elliot-kirschner-91571211" target="_blank" rel="noopener" aria-label="LinkedIn"><span>in</span></a>
-      <a class="profile-mark imdb" href="https://www.imdb.com/name/nm2803921/" target="_blank" rel="noopener" aria-label="IMDb"><span>IMDb</span></a>
-      <a class="profile-mark bluesky" href="https://bsky.app/profile/elliotkirschner.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky"><span>Bluesky</span></a>
-      <span class="profile-mark facebook" aria-label="Facebook"><span>f</span></span>
+  <section id="bio" class="wrap section bio-section">
+    <h2>Bio</h2>
+    <div class="bio-grid">
+      <div class="bio-copy">
+        <p>Elliot Kirschner is an Emmy Award-winning journalist, filmmaker, producer, and New York Times bestselling author. He directed <em>The Last Class</em>, the documentary feature about former U.S. Secretary of Labor Robert Reich and his final class at the University of California, Berkeley. Kirschner spent much of his career in broadcast journalism, including as a producer at CBS News, where his work appeared on <em>60 Minutes</em>, <em>CBS Sunday Morning</em>, and the <em>CBS Evening News</em>, and later as a senior producer of <em>Dan Rather Reports</em>.</p>
+        <p>He has since produced and executive produced a range of documentary films focused on science, society, and democracy, including <em>Human Nature</em>, <em>The Most Unknown</em>, and <em>Observer</em>. He is the co-author, with Dan Rather, of the New York Times bestseller <em>What Unites Us: Reflections on Patriotism</em>. A native of San Francisco, he returned to the city after more than two decades away and now lives and works there.</p>
+      </div>
+      <figure class="sf-photo">
+        <img src="images/san-francisco.jpeg" alt="San Francisco skyline through fog">
+      </figure>
+    </div>
+  </section>
+
+  <section id="links" class="wrap section links-section">
+    <h2>Links</h2>
+    <div class="link-marks" aria-label="External profiles">
+      <a class="link-mark linkedin" href="https://www.linkedin.com/in/elliot-kirschner-91571211" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+      <a class="link-mark imdb" href="https://www.imdb.com/name/nm2803921/" target="_blank" rel="noopener" aria-label="IMDb">IMDb</a>
+      <a class="link-mark bluesky" href="https://bsky.app/profile/elliotkirschner.bsky.social" target="_blank" rel="noopener" aria-label="Bluesky">Bluesky</a>
+      <span class="link-mark facebook" title="Facebook link to be added" aria-label="Facebook">f</span>
     </div>
   </section>
 </main>
@@ -186,7 +163,6 @@
   <span>© <span id="year"></span> Elliot Kirschner</span>
   <span>San Francisco</span>
 </footer>
-
 <script src="script.js"></script>
 </body>
 </html>

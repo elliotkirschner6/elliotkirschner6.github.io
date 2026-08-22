@@ -1,16 +1,13 @@
-Elliot Kirschner — GitHub Pages
+Elliot Kirschner website — final GitHub Pages package
 
-Upload the contents of this folder to the root of:
+Upload the CONTENTS of this folder to the root of:
 elliotkirschner6.github.io
 
-Upload:
+You should see these at the top level of the repository:
 - index.html
 - styles.css
 - script.js
-- the images folder
+- images/
 
-GitHub Pages will republish automatically after you commit the changes.
-
-Note:
-The What Unites Us cover currently loads from the official Hachette image URL.
-The Facebook mark is shown but not linked because a Facebook profile URL has not been added yet.
+The site uses local copies of Elliot's photographs and film posters.
+The What Unites Us cover is currently loaded from the official Hachette image URL.
