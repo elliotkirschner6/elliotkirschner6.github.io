@@ -199,3 +199,79 @@ h4{
   .writing-grid,.breadth,.bio-grid{grid-template-columns:1fr}
   .sf-photo{max-width:320px}
 }
+
+
+/* A more atmospheric opening: restrained gradients that blend into the portrait. */
+.hero-shell{
+  position:relative;
+  overflow:hidden;
+  border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(circle at 83% 34%, rgba(104,132,117,.22), transparent 34%),
+    radial-gradient(circle at 63% 18%, rgba(140,164,174,.18), transparent 33%),
+    linear-gradient(120deg, #f8f6f0 0%, #f5f0e7 42%, #e8ece6 72%, #dbe5e2 100%);
+}
+.hero-shell::after{
+  content:"";
+  position:absolute;
+  inset:auto -8% -44% 42%;
+  height:70%;
+  background:radial-gradient(ellipse at center, rgba(72,100,88,.11), transparent 68%);
+  pointer-events:none;
+}
+.hero-shell .hero{border:0;position:relative;z-index:1}
+.hero-copy{position:relative;z-index:2}
+.hero-image-wrap{
+  position:relative;
+  justify-self:end;
+}
+.hero-image-wrap::before{
+  content:"";
+  position:absolute;
+  inset:-22px -26px -22px -38px;
+  background:radial-gradient(circle at 55% 48%, rgba(248,246,240,.08), rgba(91,118,105,.16) 48%, transparent 72%);
+  filter:blur(8px);
+}
+.hero-photo{
+  position:relative;
+  z-index:1;
+  box-shadow:0 18px 55px rgba(28,43,36,.12);
+}
+
+/* Film descriptions reveal on hover, keyboard focus, and tap-capable browsers. */
+.poster-link{
+  position:relative;
+  display:block;
+  overflow:hidden;
+}
+.film-hover{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:flex-end;
+  padding:16px 14px;
+  background:linear-gradient(to top, rgba(16,16,16,.86), rgba(16,16,16,.40) 58%, rgba(16,16,16,0) 100%);
+  color:white;
+  opacity:0;
+  transition:opacity .22s ease;
+}
+.film-hover span{
+  font:400 .92rem/1.36 "Newsreader",Georgia,serif;
+  transform:translateY(5px);
+  transition:transform .22s ease;
+}
+.poster-link:hover .film-hover,
+.poster-link:focus-visible .film-hover{
+  opacity:1;
+}
+.poster-link:hover .film-hover span,
+.poster-link:focus-visible .film-hover span{
+  transform:translateY(0);
+}
+.poster-link:focus-visible{
+  outline:2px solid var(--ink);
+  outline-offset:3px;
+}
+@media (hover:none){
+  .film-hover{display:none}
+}
