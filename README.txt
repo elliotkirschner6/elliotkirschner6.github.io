@@ -1,12 +1,3 @@
-Elliot Kirschner — GitHub Pages V53
+Elliot Kirschner — GitHub Pages V55
 
-Upload these items to the ROOT of elliotkirschner6.github.io:
-- index.html
-- work.html
-- bio.html
-- styles.css
-- script.js
-- images/
-
-Replace the existing versions when GitHub asks.
-Do not upload the ZIP itself.
+Upload index.html, work.html, bio.html, styles.css, script.js, and images/ to the root of elliotkirschner6.github.io, replacing the existing versions.
