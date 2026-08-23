@@ -1,1 +1,1 @@
-document.getElementById('year').textContent = new Date().getFullYear();
+document.querySelectorAll('#year').forEach(el=>el.textContent=new Date().getFullYear());
