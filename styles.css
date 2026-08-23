@@ -1,94 +1,12 @@
-:root{
-  --paper:#f8f6f0;
-  --ink:#171717;
-  --muted:#6f6a61;
-  --line:#d8d4cb;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
-img{display:block;max-width:100%}
-a{color:inherit}
-.wrap{max-width:1040px;margin:0 auto;padding-left:30px;padding-right:30px}
-
-.site-header{display:flex;justify-content:space-between;align-items:center;padding-top:17px;padding-bottom:17px;border-bottom:1px solid var(--line)}
-.brand{text-decoration:none;font:600 17px "Newsreader",Georgia,serif}
-nav{display:flex;gap:20px}
-nav a{text-decoration:none;font-size:13px}
-
-.hero{padding-top:36px;padding-bottom:54px}
-.hero-stage{position:relative;height:350px;overflow:hidden;background:#d8d4cb}
-.hero-stage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:76% 48%}
-.hero-stage:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(12,16,13,.66) 0%,rgba(12,16,13,.38) 38%,rgba(12,16,13,.06) 68%,rgba(12,16,13,0) 100%)}
-.hero-copy{position:relative;z-index:1;width:54%;max-width:540px;padding:42px 42px 34px;color:#fff}
-.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
-h1{font:600 58px/.95 "Newsreader",Georgia,serif;letter-spacing:-.045em;margin:0 0 22px}
-.hero-copy p{font:400 18px/1.4 "Newsreader",Georgia,serif;margin:0;max-width:510px}
-
-.section{border-top:1px solid var(--line);padding-top:52px;padding-bottom:52px}
-.section-kicker{font:600 30px/1 "Newsreader",Georgia,serif;letter-spacing:-.02em;margin:0 0 28px}
-.film-section{border-top:1px solid var(--line);padding-top:18px}
-.section-label{font:500 18px/1 "Newsreader",Georgia,serif;color:#4e4942;margin:0 0 20px}
-
-.films{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
-.poster{display:block;position:relative;width:100%;aspect-ratio:2/3;overflow:hidden;background:#ddd7ca;border:1px solid #c7c0b2;text-decoration:none}
-.poster img{width:100%;height:100%;object-fit:cover;transition:transform .28s ease,filter .28s ease}
-.poster-hover{position:absolute;inset:0;display:flex;align-items:flex-end;padding:12px;background:linear-gradient(to top,rgba(15,15,15,.88),rgba(15,15,15,.12) 72%);color:#fff;font:400 12px/1.35 "Newsreader",Georgia,serif;opacity:0;transition:opacity .22s ease}
-.poster:hover .poster-hover,.poster:focus-visible .poster-hover{opacity:1}
-.poster:hover img,.poster:focus-visible img{transform:scale(1.025);filter:brightness(.8)}
-.film h4{font:600 20px/1.05 "Newsreader",Georgia,serif;margin:8px 0 3px}
-.film h4 a{text-decoration:none}
-.role,.breadth-type{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
-
-.writing-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
-.writing-feature{border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:minmax(130px,.40fr) minmax(0,.60fr);gap:16px;align-items:start}
-.writing-image{width:100%;aspect-ratio:4/3;overflow:hidden;background:#ddd7ca;border:1px solid #c7c0b2}
-.writing-image.book{aspect-ratio:3/4;background:#efe8da;padding:10px}
-.writing-image img{width:100%;height:100%;object-fit:cover}
-.writing-image.book img{object-fit:contain}
-.writing-copy h4{font:600 27px/1.05 "Newsreader",Georgia,serif;margin:8px 0}
-.writing-copy p{font:400 15px/1.42 "Newsreader",Georgia,serif;color:#4f4a43;margin:8px 0 10px}
-.primary-link{font-size:14px;font-weight:700;text-underline-offset:3px}
-.secondary-link{font-size:12px;font-weight:500;text-underline-offset:3px}
-.subheading{margin:14px 0 6px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
-.selected-links{display:flex;flex-direction:column;gap:5px;align-items:flex-start}
-.selected-links a{font-size:11px;line-height:1.35;text-decoration:underline;text-underline-offset:3px;color:#4f4a43}
-
-.breadth-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 34px}
-.breadth-item h4{font:600 22px/1.08 "Newsreader",Georgia,serif;margin:7px 0}
-.breadth-item h4 a{text-underline-offset:3px}
-.breadth-item p{font:400 14px/1.5 "Newsreader",Georgia,serif;color:#4f4a43;margin:0}
-
-/* Full image with subtle 15% dark field behind the white bio text. */
-.bio-stage{position:relative;min-height:500px;overflow:hidden;background:#d9d5cb}
-.bio-stage>img{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 50%}
-.bio-card{position:relative;z-index:2;width:min(620px,64%);margin:44px 0 44px auto;padding:28px 30px 16px;background:rgba(0,0,0,.15);box-shadow:none}
-.bio-card p{font:400 15px/1.58 "Newsreader",Georgia,serif;color:#fff;margin:0 0 15px;text-shadow:0 1px 2px rgba(0,0,0,.35)}
-
-.social-links{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.social{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:34px;text-decoration:none;font-weight:700;border-radius:6px}
-.linkedin{font-family:Arial,sans-serif;font-size:22px;background:#0a66c2;color:#fff;padding:0 8px}
-.imdb{font-family:Arial,sans-serif;font-size:17px;background:#f5c518;color:#111;padding:0 8px}
-.bluesky{font-family:Arial,sans-serif;font-size:13px;background:#1185fe;color:#fff;padding:0 9px}
-.facebook{font-family:Arial,sans-serif;font-size:25px;background:#1877f2;color:#fff;width:34px;min-width:34px;border-radius:50%}
-
-.footer{padding-top:24px;padding-bottom:28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
-
-@media(max-width:900px){
-  .films{grid-template-columns:repeat(3,minmax(0,1fr))}
-  .hero-copy{width:62%}
-}
-@media(max-width:700px){
-  .wrap{padding-left:18px;padding-right:18px}
-  nav{gap:11px}
-  .hero{padding-top:26px;padding-bottom:42px}
-  .hero-stage{height:390px}
-  .hero-stage>img{object-position:70% 50%}
-  .hero-copy{width:90%;padding:28px 20px 24px}
-  h1{font-size:46px}
-  .hero-copy p{font-size:16px}
-  .films{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-  .writing-grid,.breadth-grid{grid-template-columns:1fr}
-  .bio-stage{min-height:620px}
-  .bio-card{width:calc(100% - 28px);margin:180px 14px 20px;padding:22px 20px 10px}
-}
+:root{--paper:#f8f6f0;--ink:#171717;--muted:#6f6a61;--line:#d8d4cb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}img{display:block;max-width:100%}a{color:inherit}.wrap{max-width:1040px;margin:0 auto;padding-left:30px;padding-right:30px}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding-top:17px;padding-bottom:17px;border-bottom:1px solid var(--line)}.brand{text-decoration:none;font:600 17px "Newsreader",Georgia,serif}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{text-decoration:none;font-size:13px}
+.hero{padding-top:38px;padding-bottom:58px}.hero-stage{position:relative;height:390px;overflow:hidden;background:#d8d4cb}.hero-stage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 50%}.hero-stage:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,14,17,.58) 0%,rgba(14,14,17,.34) 38%,rgba(14,14,17,.08) 62%,rgba(14,14,17,0) 75%)}.hero-copy{position:relative;z-index:1;width:56%;max-width:560px;padding:48px 44px 36px;color:#fff}.kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700;margin-bottom:10px}h1{font:600 60px/.95 "Newsreader",Georgia,serif;letter-spacing:-.045em;margin:0 0 22px}.hero-copy p{font:400 18px/1.4 "Newsreader",Georgia,serif;margin:0;max-width:520px}
+.section{border-top:1px solid var(--line);padding-top:52px;padding-bottom:52px}.major-heading{font:600 30px/1 "Newsreader",Georgia,serif;letter-spacing:-.02em;margin:0 0 30px}.content-section{border-top:1px solid var(--line);padding-top:20px}.content-section+.content-section{margin-top:58px}.section-heading{font:700 27px/1 "Newsreader",Georgia,serif;letter-spacing:-.01em;margin:0 0 24px}.experience-heading{margin-bottom:30px}
+.films{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}.poster{display:block;position:relative;width:100%;aspect-ratio:2/3;overflow:hidden;background:#ddd7ca;border:1px solid #c7c0b2;text-decoration:none}.poster img{width:100%;height:100%;object-fit:cover;transition:transform .28s ease,filter .28s ease}.poster-hover{position:absolute;inset:0;display:flex;align-items:flex-end;padding:14px;background:linear-gradient(to top,rgba(15,15,15,.88),rgba(15,15,15,.12) 72%);color:#fff;font:400 13px/1.38 "Newsreader",Georgia,serif;opacity:0;transition:opacity .22s ease}.poster:hover .poster-hover,.poster:focus-visible .poster-hover{opacity:1}.poster:hover img,.poster:focus-visible img{transform:scale(1.025);filter:brightness(.8)}.film h4{font:600 22px/1.05 "Newsreader",Georgia,serif;margin:9px 0 4px}.film h4 a{text-decoration:none}.role,.breadth-type{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted)}
+.writing-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}.writing-feature{border-top:1px solid var(--line);padding-top:16px;display:grid;grid-template-columns:minmax(145px,.42fr) minmax(0,.58fr);gap:17px;align-items:start}.writing-image{width:100%;aspect-ratio:4/3;overflow:hidden;background:#ddd7ca;border:1px solid #c7c0b2}.writing-image.book{aspect-ratio:3/4;background:#efe8da;padding:10px}.writing-image img{width:100%;height:100%;object-fit:cover}.writing-image.book img{object-fit:contain}.writing-copy h4{font:600 27px/1.05 "Newsreader",Georgia,serif;margin:8px 0}.writing-copy p{font:400 15px/1.42 "Newsreader",Georgia,serif;color:#4f4a43;margin:8px 0 10px}.primary-link{font-size:14px;font-weight:700;text-underline-offset:3px}.subheading{margin:14px 0 6px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}.selected-links{display:flex;flex-direction:column;gap:5px;align-items:flex-start}.selected-links a{font-size:11px;line-height:1.4;text-decoration:underline;text-underline-offset:3px;color:#4f4a43}.book-links{margin-top:12px}
+.breadth-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 38px}.breadth-item{padding-top:2px}.breadth-item h4{font:600 22px/1.08 "Newsreader",Georgia,serif;margin:7px 0}.breadth-item h4 a{text-underline-offset:3px}.breadth-item p{font:400 14px/1.5 "Newsreader",Georgia,serif;color:#4f4a43;margin:0}
+.bio-stage{position:relative;min-height:500px;overflow:hidden;background:#d9d5cb}.bio-stage>img{position:absolute;z-index:0;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 50%}.bio-card{position:relative;z-index:2;width:min(620px,64%);margin:44px 0 44px auto;padding:28px 30px 16px;background:transparent;box-shadow:none;isolation:isolate}.bio-card:before{content:"";position:absolute;z-index:-1;inset:-18px -22px -12px;background:radial-gradient(ellipse at center,rgba(0,0,0,.34) 0%,rgba(0,0,0,.24) 48%,rgba(0,0,0,.08) 76%,rgba(0,0,0,0) 100%);filter:blur(6px)}.bio-card p{font:400 15px/1.58 "Newsreader",Georgia,serif;color:#fff;margin:0 0 15px;text-shadow:0 2px 4px rgba(0,0,0,.8),0 0 1px rgba(0,0,0,.9)}
+.social-links{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.social{display:inline-flex;align-items:center;justify-content:center;min-width:38px;height:34px;text-decoration:none;font-weight:700;border-radius:6px}.linkedin{font-family:Arial,sans-serif;font-size:22px;background:#0a66c2;color:#fff;padding:0 8px}.imdb{font-family:Arial,sans-serif;font-size:17px;background:#f5c518;color:#111;padding:0 8px}.bluesky{font-family:Arial,sans-serif;font-size:13px;background:#1185fe;color:#fff;padding:0 9px}.facebook{font-family:Arial,sans-serif;font-size:25px;background:#1877f2;color:#fff;width:34px;min-width:34px;border-radius:50%}.footer{padding-top:24px;padding-bottom:28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--muted);font-size:12px}
+@media(max-width:900px){.films{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-copy{width:64%}}
+@media(max-width:700px){.wrap{padding-left:18px;padding-right:18px}nav{gap:10px}.hero{padding-top:26px;padding-bottom:42px}.hero-stage{height:420px}.hero-stage>img{object-position:68% 50%}.hero-copy{width:92%;padding:30px 20px 24px}h1{font-size:46px}.hero-copy p{font-size:16px}.films{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 14px}.writing-grid,.breadth-grid{grid-template-columns:1fr}.bio-stage{min-height:620px}.bio-card{width:calc(100% - 28px);margin:180px 14px 20px;padding:22px 20px 10px}}
