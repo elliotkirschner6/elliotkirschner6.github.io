@@ -1,3 +1,18 @@
-Elliot Kirschner — GitHub Pages V55
+Elliot Kirschner — GitHub Pages V56
 
-Upload index.html, work.html, bio.html, styles.css, script.js, and images/ to the root of elliotkirschner6.github.io, replacing the existing versions.
+Upload these items to the ROOT of elliotkirschner6.github.io:
+- index.html
+- work.html
+- bio.html
+- styles.css
+- script.js
+- images/
+
+Replace the existing versions when GitHub asks.
+Do not upload the ZIP itself.
+
+Latest changes:
+- Mobile hamburger navigation
+- The Last Class dated 2025
+- 2025 box-office line
+- What Unites Us bestseller label and revised description

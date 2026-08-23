@@ -7,7 +7,7 @@ img{display:block;max-width:100%} a{color:inherit}
 
 .site-header{display:flex;justify-content:space-between;align-items:center;padding-top:18px;padding-bottom:18px;border-bottom:1px solid var(--line)}
 .brand{text-decoration:none;font:600 19px "Newsreader",Georgia,serif}
-nav{display:flex;gap:22px} nav a{text-decoration:none;font-size:15px}
+.site-nav-links{display:flex;gap:22px}.site-nav-links a{text-decoration:none;font-size:15px}.menu-toggle{display:none;border:0;background:transparent;color:inherit;padding:4px;font-size:24px;line-height:1;cursor:pointer}
 
 .hero{padding-top:38px;padding-bottom:58px}
 .hero-stage{position:relative;height:470px;overflow:hidden;background:#d8d4cb}
@@ -104,7 +104,12 @@ nav{display:flex;gap:22px} nav a{text-decoration:none;font-size:15px}
 }
 @media(max-width:700px){
   .wrap{padding-left:18px;padding-right:18px}
-  .brand{font-size:18px} nav{gap:14px} nav a{font-size:14px}
+  .site-header{position:relative}
+  .brand{font-size:18px}
+  .menu-toggle{display:block}
+  .site-nav-links{display:none;position:absolute;right:18px;top:100%;z-index:50;min-width:150px;padding:8px 0;background:var(--paper);border:1px solid var(--line);box-shadow:0 10px 24px rgba(0,0,0,.08);flex-direction:column;gap:0}
+  .site-nav-links.open{display:flex}
+  .site-nav-links a{display:block;padding:10px 14px;font-size:14px}
   .hero{padding-top:26px;padding-bottom:42px}
   .hero-stage{height:500px}
   .hero-stage>img{object-position:72% 48%}
