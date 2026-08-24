@@ -1,4 +1,4 @@
-Elliot Kirschner — GitHub Pages V56
+Elliot Kirschner — GitHub Pages V58
 
 Upload these items to the ROOT of elliotkirschner6.github.io:
 - index.html
@@ -8,11 +8,7 @@ Upload these items to the ROOT of elliotkirschner6.github.io:
 - script.js
 - images/
 
-Replace the existing versions when GitHub asks.
-Do not upload the ZIP itself.
-
 Latest changes:
-- Mobile hamburger navigation
-- The Last Class dated 2025
-- 2025 box-office line
-- What Unites Us bestseller label and revised description
+- Slightly larger body and navigation text on desktop
+- Slightly larger body and menu text on mobile
+- Mobile header remains sticky with hamburger navigation

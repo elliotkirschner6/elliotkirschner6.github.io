@@ -17,7 +17,7 @@ img{display:block;max-width:100%} a{color:inherit}
 .kicker{font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
 .hero-bottom{margin-top:auto}
 .hero h1{font:600 60px/.95 "Newsreader",Georgia,serif;letter-spacing:-.045em;margin:0 0 18px}
-.hero-copy p{font:400 18px/1.4 "Newsreader",Georgia,serif;margin:0;max-width:520px}
+.hero-copy p{font:400 19px/1.4 "Newsreader",Georgia,serif;margin:0;max-width:520px}
 
 .page-intro{padding-top:48px;padding-bottom:26px}
 .page-intro h1{font:600 36px/1 "Newsreader",Georgia,serif;letter-spacing:-.025em;margin:0}
@@ -38,7 +38,7 @@ img{display:block;max-width:100%} a{color:inherit}
 .home-film-copy h3 span{font-size:14px;font-weight:400;color:var(--muted)}
 .role{font-size:13px;letter-spacing:.04em;color:#4f4a43;font-weight:700;margin:0 0 7px}
 .role.small{font-size:10px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);margin:0}
-.home-film-copy p{font:400 14px/1.45 "Newsreader",Georgia,serif;color:#4f4a43;margin:0 0 8px;max-width:650px}
+.home-film-copy p{font:400 15px/1.45 "Newsreader",Georgia,serif;color:#4f4a43;margin:0 0 8px;max-width:650px}
 .film-meta{font-size:11px;line-height:1.4;font-weight:700;color:#4f4a43}
 
 .home-writing-list{display:grid;grid-template-columns:1fr;gap:0}
@@ -51,10 +51,10 @@ img{display:block;max-width:100%} a{color:inherit}
 .home-writing-item h3{font:600 24px/1.05 "Newsreader",Georgia,serif;margin:0 0 8px}
 .home-writing-item h3 a{text-decoration:none}
 .home-writing-item h3 a:hover{text-decoration:underline;text-underline-offset:4px}
-.home-writing-item p{font:400 16px/1.45 "Newsreader",Georgia,serif;color:#4f4a43;margin:0;max-width:620px}
+.home-writing-item p{font:400 17px/1.45 "Newsreader",Georgia,serif;color:#4f4a43;margin:0;max-width:620px}
 .quiet-link{display:inline-block;margin-top:9px;font-size:12px;text-underline-offset:3px}
 .more-work{margin-top:52px;padding-top:22px;border-top:1px solid var(--line);max-width:760px}
-.more-work p{font:400 15px/1.5 "Newsreader",Georgia,serif;color:#4f4a43;margin:0 0 10px}
+.more-work p{font:400 16px/1.5 "Newsreader",Georgia,serif;color:#4f4a43;margin:0 0 10px}
 .more-work a{font-size:12px;text-underline-offset:3px}
 
 .work-section{padding-top:28px;padding-bottom:42px}
@@ -71,25 +71,25 @@ img{display:block;max-width:100%} a{color:inherit}
 .writing-image{width:100%;aspect-ratio:3/4;overflow:hidden;background:#ddd7ca;border:1px solid #c7c0b2}
 .writing-image.book{background:#efe8da;padding:10px}.writing-image img{width:100%;height:100%;object-fit:cover}.writing-image.book img{object-fit:contain}
 .writing-copy h3{font:600 24px/1.05 "Newsreader",Georgia,serif;margin:4px 0 8px}.writing-copy h3 a{text-decoration:none}
-.writing-copy p{font:400 15px/1.46 "Newsreader",Georgia,serif;color:#4f4a43;margin:8px 0 10px}
+.writing-copy p{font:400 16px/1.46 "Newsreader",Georgia,serif;color:#4f4a43;margin:8px 0 10px}
 .subheading{margin:14px 0 6px;font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
 .selected-links{display:flex;flex-direction:column;gap:6px;align-items:flex-start}
-.selected-links a{font-size:12px;line-height:1.4;text-decoration:underline;text-underline-offset:3px;color:#4f4a43}
+.selected-links a{font-size:13px;line-height:1.4;text-decoration:underline;text-underline-offset:3px;color:#4f4a43}
 
 .breadth-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 40px}
 .breadth-type{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:7px}
 .breadth-item h3{font:600 22px/1.08 "Newsreader",Georgia,serif;margin:0 0 7px}
-.breadth-item p{font:400 14px/1.52 "Newsreader",Georgia,serif;color:#4f4a43;margin:0}
+.breadth-item p{font:400 15px/1.52 "Newsreader",Georgia,serif;color:#4f4a43;margin:0}
 
 .bio-page{padding-bottom:68px}
 .bio-layout{display:grid;grid-template-columns:minmax(260px,.9fr) minmax(0,1.1fr);gap:36px;align-items:start}
 .bio-photo{margin:0;height:420px;overflow:hidden}
 .bio-photo img{width:100%;height:100%;object-fit:cover;object-position:center 50%}
-.bio-text p{font:400 17px/1.62 "Newsreader",Georgia,serif;color:#3f3b35;margin:0 0 20px}
+.bio-text p{font:400 18px/1.62 "Newsreader",Georgia,serif;color:#3f3b35;margin:0 0 20px}
 .bio-text strong{font-weight:700;color:#171717}
 
 .footer{border-top:1px solid var(--line);padding-top:24px;padding-bottom:28px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.contact{font:400 14px "Newsreader",Georgia,serif;text-underline-offset:3px;margin-right:auto}
+.contact{font:400 15px "Newsreader",Georgia,serif;text-underline-offset:3px;margin-right:auto}
 .social-links{display:flex;align-items:center;gap:10px}
 .social{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:30px;text-decoration:none;font-weight:700;border-radius:5px}
 .linkedin{font-family:Arial,sans-serif;font-size:19px;background:#0a66c2;color:#fff;padding:0 7px}
@@ -104,18 +104,23 @@ img{display:block;max-width:100%} a{color:inherit}
 }
 @media(max-width:700px){
   .wrap{padding-left:18px;padding-right:18px}
-  .site-header{position:relative}
+  .site-header{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:var(--paper);
+  }
   .brand{font-size:18px}
   .menu-toggle{display:block}
   .site-nav-links{display:none;position:absolute;right:18px;top:100%;z-index:50;min-width:150px;padding:8px 0;background:var(--paper);border:1px solid var(--line);box-shadow:0 10px 24px rgba(0,0,0,.08);flex-direction:column;gap:0}
   .site-nav-links.open{display:flex}
-  .site-nav-links a{display:block;padding:10px 14px;font-size:14px}
+  .site-nav-links a{display:block;padding:10px 14px;font-size:15px}
   .hero{padding-top:26px;padding-bottom:42px}
   .hero-stage{height:500px}
   .hero-stage>img{object-position:72% 48%}
   .hero-stage:after{background:linear-gradient(180deg,rgba(8,12,14,.62) 0%,rgba(8,12,14,.38) 34%,rgba(8,12,14,.08) 58%,rgba(8,12,14,0) 76%)}
   .hero-copy{width:100%;max-width:100%;padding:28px 22px 28px}
-  .hero h1{font-size:46px}.hero-copy p{font-size:16px;max-width:88%}
+  .hero h1{font-size:46px}.hero-copy p{font-size:17px;max-width:88%}
   .home-film{grid-template-columns:105px 1fr;gap:16px;align-items:start}
   .home-poster{width:105px;height:132px}
   .home-film-copy h3{font-size:20px}
