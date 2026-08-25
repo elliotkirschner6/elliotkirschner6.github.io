@@ -1,4 +1,4 @@
-Elliot Kirschner — GitHub Pages V61
+Elliot Kirschner — GitHub Pages V62
 
 Upload to the repository root:
 - index.html
@@ -9,9 +9,8 @@ Upload to the repository root:
 - images/
 
 Latest changes:
-- Mobile hero keeps ALL text on the photograph
-- Elliot Kirschner moved higher into the sky area
-- Description is narrower and wraps farther left to avoid Elliot's face
-- Newsletter and Book labels are larger, darker, bolder, and more spaced
-- Homepage writing entries have slightly more breathing room
-- Contact link still opens contact@elliotkirschner.com
+- Mobile hero image is shorter vertically
+- Elliot Kirschner stays high in the sky area
+- Mobile description sits at the bottom left
+- Text is kept off Elliot's face and may overlap only the sweater area
+- Newsletter and Book styling from V61 retained
