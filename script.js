@@ -16,3 +16,12 @@ document.querySelectorAll('.site-nav-links a').forEach(link => {
     if (toggle) toggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+document.querySelectorAll('.js-contact').forEach(link => {
+  const user = 'contact';
+  const domain = ['elliotkirschner','com'].join('.');
+  link.addEventListener('click', event => {
+    event.preventDefault();
+    window.location.href = 'mailto:' + user + '@' + domain;
+  });
+});

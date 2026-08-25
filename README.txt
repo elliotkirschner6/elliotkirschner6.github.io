@@ -1,14 +1,10 @@
-Elliot Kirschner — GitHub Pages V59
+Elliot Kirschner — GitHub Pages V60
 
-Upload these items to the ROOT of elliotkirschner6.github.io:
-- index.html
-- work.html
-- bio.html
-- styles.css
-- script.js
-- images/
+Upload index.html, work.html, bio.html, styles.css, script.js, and images/ to the repository root.
 
-Latest changes:
-- Header is now sticky on desktop and mobile
-- Mobile hero image crop is tighter, with less headspace above Elliot's head
-- Typography remains slightly larger for readability
+Changes:
+- Contact link replaces public Gmail address
+- Contact opens contact@elliotkirschner.com
+- Newsletter and Book labels on homepage
+- 35,000+ subscribers and New York Times bestseller emphasized in copy
+- Mobile hero keeps only the kicker over the photo; name and description sit below
